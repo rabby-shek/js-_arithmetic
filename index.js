@@ -7,13 +7,13 @@ function calculate() {
 
 }
 function totalInstalment (){
-    const result = document.getElementById("result");
+    const result = document.getElementById("result").innerHTML;
     const Installment = document.getElementById("instalmentAmount");
     const TotalAmount = document.getElementById("totalAmount");
     const principal = Number(document.getElementById("Principal").value);
     const Total = Number(document.getElementById("total").value);
-    Installment.innerHTML = ( principal + result ) / Total;
-    TotalAmount.innerHTML =  Installment * Total;
+    Installment.innerHTML = (parseInt(principal)  + parseInt(result)) / Total ;
+    TotalAmount.innerHTML =  document.getElementById("instalmentAmount").innerHTML * Total;
 
 
 
