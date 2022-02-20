@@ -15,9 +15,4 @@ function totalInstalment (){
     const Total = Number(document.getElementById("total").value);
     Installment.innerHTML = (parseInt(principal)  + parseInt(result)) / Total ;
     TotalAmount.innerHTML =  document.getElementById("instalmentAmount").innerHTML * Total;
-
-
-
-
-
 }
