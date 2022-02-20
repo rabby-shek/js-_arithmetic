@@ -4,6 +4,7 @@ function calculate() {
     const principal = Number(document.getElementById("Principal").value);
     const rate = Number(document.getElementById("Rate").value);
     result.innerHTML =  (principal * rate) / 100;
+    return totalInstalment ();
 
 }
 function totalInstalment (){
